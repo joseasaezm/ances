@@ -1,0 +1,11 @@
+The source code of ANCES is written in R. To run ANCES, just call the function:
+
+res <- ANCES (data = data, k1 = 1, k2 = 10, p = 0.05, itmax = 20, itimp = 2)
+
+where:
+- data: data frame with data to preprocess (class variable must be in the last column)
+- k1: number of nearest neighbors in the fitness function
+- k2: number of nearest neighbors used in the noise score
+- p: percentage of attribute values corrected per iteration
+- itmax: maximum number of iterations
+- itimp: maximum number of iterations without improvement
